@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juegos</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="CSS.css"> 
+
+</head>
+<body class="background">
+    <header class="">
+    </header>
+    <main class="container-fluid row">
+        
+        <div class="col-4 ">
+            <form class="container">
+                <div class="card-header">
+                    <h3 class="textform">Completa el formulario</h3>
+                </div>
+                <div class="card-body">
+                    <div>
+                        <label>Nombre Del Juego</label>
+                        <input type="text" id="nombre" name="nombre" class="form-control custom-input" onblur="verificar(this.id)">
+                        <div id="e-nombre"></div>
+                    </div>
+                    <div>
+                        <label>Fecha de Lanzamiento</label>
+                        <input type="date" id="fecha" name="fecha" class="form-control custom-input" onblur="verificar(this.id)">
+                        <div id="e-fecha"></div>
+                    </div>
+                    <div>
+                        <label>Categoría</label>
+                        <select class="form-select form-select-sm custom-select" aria-label="Small select example" id="cat" name="cat" onblur="verificar(this.id)">
+                            <option selected>Elige la Categoría</option>
+                            <option value="Accion">Acción</option>
+                            <option value="Arcade">Arcade</option>
+                            <option value="Ritmo">Ritmo</option>
+                            <option value="FPS">FPS</option>
+                            <option value="Disparos">Disparos en tercera persona</option>
+                            <option value="Plataformas">Plataformas</option>
+                            <option value="Rol">Rol</option>
+                            <option value="JRPG">JRPG</option>
+                            <option value="Roguelike">Roguelike</option>
+                            <option value="Estrategia">Estrategia</option>
+                            <option value="Carreras">Carreras</option>
+                          </select>
+                        <div id="e-cat"></div>
+                    </div>
+                    <div>
+                        <label>Temática</label>
+                        <input type="text" id="tem" name="tem" class="form-control custom-input" onblur="verificar(this.id)">
+                        <div id="e-tem"></div>
+                    </div>
+
+                    <div>
+                        <label>Plataforma</label>
+                        <input type="text" id="plat" name="plat" class="form-control custom-input" onblur="verificar(this.id)">
+                        <div id="e-plat"></div>
+                    </div>
+                    <div>
+                        <label>Modo de Juego</label>
+                        <input type="text" id="mod" name="mod" class="form-control custom-input" onblur="verificar(this.id)">
+                        <div id="e-mod"></div>
+                    </div>
+                    
+                    <div>
+                        <label>Idioma</label>
+                        <input type="text" id="idioma" name="idioma" class="form-control custom-input" onblur="verificar(this.id)">
+                        <div id="e-idioma"></div>
+                    </div>
+                    <div>
+                        <label>Precio</label>
+                        <input type="number" id="precio" name="precio" class="form-control custom-input" min="5000"
+                            onkeypress="return soloNumeros(event)" onblur="verificar(this.id)">
+                        <div id="e-precio"></div>
+                    </div>
+                    <div>
+                        <label>Clasificacion de Edad</label>
+                        <input class="form-check-input" type="radio" name="edad" id="+3" value="3" onchange="verificar(this)">
+                        <label class="form-check-label">+3</label>
+                        <input class="form-check-input" type="radio" name="edad" id="+7" value="7" onchange="verificar(this)">
+                        <label class="form-check-label">+7</label>
+                        <input class="form-check-input" type="radio" name="edad" id="+12" value="12" onchange="verificar(this)">
+                        <label class="form-check-label">+12</label>
+                        <input class="form-check-input" type="radio" name="edad" id="+16" value="16" onchange="verificar(this)">
+                        <label class="form-check-label">+16</label>
+                        <input class="form-check-input" type="radio" name="edad" id="+18" value="18" onchange="verificar(this)">
+                        <label class="form-check-label">+18</label>
+                        <div id="e-edad"></div>
+                        
+                    </div>
+                </div>
+                
+                <div class="card-footer text-center">
+                    <input type="button" value="Limpiar" onclick="limpiar()" class="btn btn-info w-25 BTNCITO">
+                    <input type="submit" value="Guardar" id="btnSave" class="btn btn-success w-25 BTNCITO">
+                </div>
+            </form>
+        </div>
+        <div class="col-4 ">
+            <div class="containerCard">
+                <div class="card-body"></div>
+                <h5 class="textCaldh5">REGISTRO </h5>
+                <h5 class="textCaldh55"> ZEROGAM3S</h5>
+                <img src="fotoLado1.jpg" class="agrandar-imagen"alt="...">
+                </div>
+              </div>
+
+        </div>
+        <div>
+            <h1 class="textdb1 text-center"  >DATA</h1>
+            <h2 class="textdb2 text-center"  >BASE</h2>
+        </div>
+        <div>
+            
+            <div class="table-responsive">
+                <table class="tablex table-bordered table-hover">
+                    <thead class="table-dark ">
+                        <tr>
+                            <th>Nombre</th>
+                            <th>Fecha de Lanzamiento</th>
+                            <th>Categoría</th>
+                            <th>Temática</th>
+                            <th>Plataforma</th>
+                            <th>Modo de Juego</th>
+                            <th>Idioma</th>
+                            <th>Precio</th>
+                            <th>Edad Admitida</th>
+                            <th></th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody id="contenido"></tbody>
+                </table>
+            </div>
+        </div>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="utilidades.js"></script>
+    <!-- module permite exportar e importar funciones -->
+    <script src="funciones.js" type="module"></script>
+    <script>
+         function btnSave() {
+            Swal.fire({
+                icon: 'info',
+                title: 'Información',
+                text: 'Este es un mensaje informativo.',
+                confirmButtonText: 'Aceptar', // Texto del botón de confirmación
+                cancelButtonText: 'Cancelar', // Texto del botón de cancelación
+                showCancelButton: true, // Mostrar botón de cancelación
+                customClass: {
+                    popup: 'my-swal-popup-class', // Clase personalizada para el contenedor de la alerta
+                    title: 'my-swal-title-class', // Clase personalizada para el título
+                    content: 'my-swal-content-class', // Clase personalizada para el contenido
+                    confirmButton: 'swal2-confirm', // Clase personalizada para el botón de confirmación
+                    cancelButton: 'swal2-cancel' // Clase personalizada para el botón de cancelación
+                }
+            });
+        }
+    </script>
+</body>
+</html>

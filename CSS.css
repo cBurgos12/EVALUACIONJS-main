@@ -1,0 +1,192 @@
+.background{
+    background-image: url(tierra-horizonte-planeta.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.container{
+    background-color: #3012dc0c;
+    border-radius: 20px;
+    padding: 100px 60px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.25);
+    color: aqua;
+    text-align: center;
+    font-family: "Lucida Console", "Courier New", monospace;
+    transition: 1s;
+}
+
+.container:hover{
+    transform: scale(1.03);
+    cursor: auto;
+}
+
+.textform{
+    text-shadow: 0px 5px 15px rgba(255, 255, 255, 0.25);
+    text-shadow: 0 0 5px #00eb7d, 0 0 10px #1100ff; /* Sombra del texto */
+    font-family: Cartoon;
+    font-size: 16px;
+    line-height: 27px;
+}
+@font-face {
+    font-family: 'Cartoon'; /* Nombre que le asignas a la fuente */
+    src: url('Comical\ Cartoon.ttf') format('truetype'); /* URL de la fuente */
+    /* Otras propiedades opcionales, como font-weight, font-style, etc. */
+}
+@font-face {
+    font-family: 'Playstory'; /* Nombre que le asignas a la fuente */
+    src: url('Play\ Story.otf') format('truetype'); /* URL de la fuente */
+    /* Otras propiedades opcionales, como font-weight, font-style, etc. */
+}
+
+.contenido {
+    display: flex;
+  }
+  
+  .imagen-derecha {
+    float: right;
+    margin-top: -20px; /* Ajusta el margen superior según sea necesario */
+  }
+
+  .containerCard{
+    background-color: #3012dc0c;
+    border-radius: 20px;
+    padding: 40px 40px;
+    width: 730px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.25);
+    color: aqua;
+    text-align: center;
+    font-family: monospace;
+    margin-left: 250px;
+    justify-content: center;
+}
+
+.agrandar-imagen {
+    width: 700px; /* Ancho fijo de la imagen */
+    height: 500px; /* Altura fija de la imagen */
+    max-width: 100%;
+    height: auto;
+    border: 3px solid rgb(246, 25, 0);
+  }
+
+  .textCaldh5{
+    text-shadow: 0px 5px 15px rgba(255, 255, 255, 0.25);
+    text-shadow: 0 0 5px #00eb7d, 0 0 10px #1100ff; /* Sombra del texto */
+    font-family: Cartoon;
+    font-size: 20px;
+    line-height: 27px;
+} 
+ .textCaldh55{
+    text-shadow: 0px 5px 15px rgba(255, 255, 255, 0.25);
+    text-shadow: 0 0 5px #000000, 0 0 10px #f90000; /* Sombra del texto */
+    font-family: Cartoon;
+    font-size: 20px;
+    line-height: 27px;
+    color: red;
+} 
+
+.textdb1{
+    text-shadow: 0px 5px 15px rgba(255, 255, 255, 0.25);
+    text-shadow: 0 0 5px #000000, 0 0 10px #039344; /* Sombra del texto */
+    font-family: Cartoon;
+    font-size: 29px;
+    line-height: 27px;
+    color: rgb(98, 255, 0);
+}
+.textdb2{
+    text-shadow: 0px 5px 15px rgba(255, 255, 255, 0.25);
+    text-shadow: 0 0 5px #000000, 0 0 10px #956504; /* Sombra del texto */
+    font-family: Cartoon;
+    font-size: 25px;
+    line-height: 27px;
+    color: rgb(255, 119, 0);
+    margin-left: 100px;
+}
+
+.tablex{
+    background-color: rgba(238, 130, 238, 0.102);
+    border-color: #423a40;
+    width: 1810px;
+    text-align: center;
+    color: #00ffe1;
+    font-weight: bold;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    
+}
+
+.custom-table {
+    color: blue; /* Cambia el color del texto a azul */
+}
+
+ .custom-input {
+    background-color: rgba(255, 0, 255, 0.057);
+    color: rgb(255, 255, 255);
+    transition: background-color 0.3s, color 0.3s;
+    border: 1px solid rgba(255, 0, 0, 0);
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.25);
+    
+ }
+ .custom-input:focus {
+    background-color: rgba(27, 1, 30, 0.264); /* Color de fondo cuando el campo está enfocado */
+    color: rgb(0, 191, 239); /* Color de texto cuando el campo está enfocado */
+}
+.custom-select {
+    appearance: none; /* Elimina los estilos predeterminados del sistema */
+    -webkit-appearance: none; /* Para Safari */
+    -moz-appearance: none; /* Para Firefox */
+    background-color:rgba(255, 0, 255, 0.057); /* Color de fondo */
+    color: rgb(255, 255, 255); /* Color del texto */
+    border: 1px solid #ffffff00; /* Borde */
+    border-radius: 5px; /* Radio del borde */
+    padding: 9px; /* Espaciado interno */
+    width: 470px; /* Ancho */
+    cursor: pointer; /* Cambia el cursor al pasar sobre la lista */
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.25);
+    max-width: 100%;
+}
+
+/* Estilos para los elementos opcionales */
+.custom-select option {
+    background-color:rgb(27, 1, 30); /* Color de fondo de las opciones */
+    color: rgb(255, 248, 248); /* Color del texto de las opciones */
+}
+
+/* custom-swal.css */
+
+/* Cambiar el fondo de la alerta */
+.swal2-popup {
+    background-color: #020003c8;
+    color: #980303;
+    font-family: Playstory;
+    border-radius: 5%;
+    box-shadow: 0px 5px 15px rgba(255, 0, 47, 0.452);
+}
+
+
+.my-swal {
+    background-color: #020003c8;
+    box-shadow: 0px 5px 15px rgba(0, 255, 64, 0.452); /* Sombra ligera */
+    border-radius: 5px; /* Bordes redondeados */
+    border-radius: 5%;
+    
+}
+
+/* Cambiar el color de fondo del botón al pasar el ratón por encima */
+.swal2-confirmm:hover {
+    background-color: #ff0099; /* Nuevo color de fondo al pasar el ratón */
+    box-shadow: 0px 1px 15px rgb(60, 177, 255);
+    font-size: 17px;
+    transition: box-shadow 0.3s, font-size 0.3s;
+    transform: scale(1.05);
+}
+
+.BTNCITO{
+    font-family: Playstory;
+    font-size: 20px;
+    max-width: 100%;
+    transition: transform 0.3s ease;
+}
+
+.BTNCITO:hover{
+ max-width: 100%;
+ transform: scale(1.05);
+ box-shadow: 0px 1px 15px rgb(0, 0, 0);
+}
