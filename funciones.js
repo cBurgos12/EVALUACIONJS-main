@@ -122,6 +122,7 @@ window.addEventListener('DOMContentLoaded', () => {
                     if (result.isConfirmed) {
                         //función eliminar
                         remove(btn.id)
+                        limpiar()
                         Swal.fire({
                             title: "Eliminado!",
                             text: "Su registro ha sido eliminado",
