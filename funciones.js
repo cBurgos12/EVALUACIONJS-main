@@ -122,6 +122,7 @@ window.addEventListener('DOMContentLoaded', () => {
                     if (result.isConfirmed) {
                         //función eliminar
                         remove(btn.id)
+                        id = 0
                         limpiar()
                         Swal.fire({
                             title: "Eliminado!",
