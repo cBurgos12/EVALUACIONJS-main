@@ -44,6 +44,7 @@ document.getElementById('btnSave').addEventListener('click', async (event) => {
                 });
                 document.getElementById('nombre').classList.add('is-invalid');
             }
+            else{
             //función que permite el guardado de datos
             save(jue)
             Swal.fire({ text: "Se ha guardado exitosamente :D!",
@@ -55,12 +56,12 @@ document.getElementById('btnSave').addEventListener('click', async (event) => {
                 popup: 'my-swal',
                 confirmButton: 'swal2-confirmm'
                 }})
+            }
             
         } else{
             //permite editar los datos si el id es diferente de 0
             update(id,jue)
-        }
-        id = 0
+        
         Swal.fire({ text: "Se ha editado exitosamente :D!",
             title: "",
             icon: "success",
@@ -70,6 +71,9 @@ document.getElementById('btnSave').addEventListener('click', async (event) => {
             popup: 'my-swal',
             confirmButton: 'swal2-confirmm'
             }})
+        }
+        
+        id = 0
         limpiar()
     }
 })
